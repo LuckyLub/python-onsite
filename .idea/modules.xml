@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Extras/.idea/Extras.iml" filepath="$PROJECT_DIR$/../Extras/.idea/Extras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../during_lectures/.idea/during_lectures.iml" filepath="$PROJECT_DIR$/../during_lectures/.idea/during_lectures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../labs/python-fundamentals/.idea/python-fundamentals.iml" filepath="$PROJECT_DIR$/../labs/python-fundamentals/.idea/python-fundamentals.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/python-onsite.iml" filepath="$PROJECT_DIR$/.idea/python-onsite.iml" />
     </modules>
   </component>

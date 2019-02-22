@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89e72b37-c1ca-465d-81b4-28cb1e4805dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/week_01/00_intro/01_coding.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_01/00_intro/01_coding.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week_01/00_intro/02_big_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_01/00_intro/02_big_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week_01/01_CLI/cli_exercises.md" beforeDir="false" afterPath="$PROJECT_DIR$/week_01/01_CLI/cli_exercises.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../labs/python-fundamentals/src/06_classes_objects_methods/Challenge_classes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../labs/python-fundamentals/src/06_classes_objects_methods/Challenge_game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../during_lectures/20190222.py" beforeDir="false" afterPath="$PROJECT_DIR$/../during_lectures/20190222.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python-onsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python-onsite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_01/03_basics_variables/01_calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_01/03_basics_variables/01_calculator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_01/03_basics_variables/02_print_pi.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_01/03_basics_variables/02_print_pi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_01/03_basics_variables/03_circumference.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_01/03_basics_variables/03_circumference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_01/03_basics_variables/04_rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_01/03_basics_variables/04_rectangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_01/03_basics_variables/05_miles_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_01/03_basics_variables/05_miles_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_01/03_basics_variables/06_population.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_01/03_basics_variables/06_population.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_01/03_basics_variables/07_conversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_01/03_basics_variables/07_conversion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_01/03_basics_variables/08_trip_cost.py" beforeDir="false" afterPath="$PROJECT_DIR$/week_01/03_basics_variables/08_trip_cost.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week_01/mini_projects/virus.md" beforeDir="false" afterPath="$PROJECT_DIR$/week_01/mini_projects/virus.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,51 +27,52 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week_01/00_intro/01_coding.py">
+        <entry file="file://$PROJECT_DIR$/../Extras/datastructures_and_algorithms/Queue_class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week_01/00_intro/02_big_python.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="65" lean-forward="true" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week_01/01_CLI/cli_exercises.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="120">
-                <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="-301">
+              <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+              <folding>
+                <element signature="e#222#541#0" />
+                <element signature="e#582#739#0" />
+                <element signature="e#774#991#0" />
+                <element signature="e#1030#1439#0" />
+                <element signature="e#1528#1832#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/week_01/02_git_github/github_exercises.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/../during_lectures/20190222.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="155" column="22" lean-forward="true" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../labs/python-fundamentals/src/06_classes_objects_methods/Challenge_classes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../during_lectures" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -65,15 +80,33 @@
         <option value="$PROJECT_DIR$/week_01/00_intro/01_coding.py" />
         <option value="$PROJECT_DIR$/week_01/00_intro/02_big_python.py" />
         <option value="$PROJECT_DIR$/week_01/01_CLI/cli_exercises.md" />
+        <option value="$PROJECT_DIR$/week_01/03_basics_variables/01_calculator.py" />
+        <option value="$PROJECT_DIR$/week_01/03_basics_variables/02_print_pi.py" />
+        <option value="$PROJECT_DIR$/week_01/03_basics_variables/03_circumference.py" />
+        <option value="$PROJECT_DIR$/week_01/03_basics_variables/04_rectangle.py" />
+        <option value="$PROJECT_DIR$/week_01/03_basics_variables/05_miles_runner.py" />
+        <option value="$PROJECT_DIR$/week_01/03_basics_variables/06_population.py" />
+        <option value="$PROJECT_DIR$/week_01/03_basics_variables/07_conversion.py" />
+        <option value="$PROJECT_DIR$/week_01/03_basics_variables/08_trip_cost.py" />
+        <option value="$PROJECT_DIR$/week_01/mini_projects/virus.md" />
+        <option value="$PROJECT_DIR$/../during_lectures/20190221.py" />
+        <option value="$PROJECT_DIR$/../labs/python-fundamentals/src/03_more_datatypes/3_tuples/04_15_tuple_sort.py" />
+        <option value="$PROJECT_DIR$/../labs/python-fundamentals/src/06_classes_objects_methods/Challenge: Build a card game.py" />
+        <option value="$PROJECT_DIR$/../labs/python-fundamentals/src/06_classes_objects_methods/Challenge: the game.py" />
+        <option value="$PROJECT_DIR$/../labs/python-fundamentals/src/06_classes_objects_methods/Challenge_classes.py" />
+        <option value="$PROJECT_DIR$/../labs/python-fundamentals/src/06_classes_objects_methods/Challenge_game.py" />
+        <option value="$PROJECT_DIR$/../Extras/datastructures_and_algorithms/Queue_class.py" />
+        <option value="$PROJECT_DIR$/../during_lectures/20190222.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="927" />
-    <option name="height" value="1055" />
+    <option name="height" value="1053" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -84,36 +117,12 @@
           <expand>
             <path>
               <item name="python-onsite" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="~/Documents/CodingNomads/Extras" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
               <item name="python-onsite" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="week_01" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="python-onsite" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="week_01" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="00_intro" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="python-onsite" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="week_01" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="01_CLI" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="python-onsite" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="week_01" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="02_git_github" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="python-onsite" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="week_01" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="03_basics_variables" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="~/Documents/CodingNomads/Extras" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="datastructures_and_algorithms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -123,7 +132,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Extras" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -137,20 +147,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.02_big_python">
-    <configuration name="01_coding" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python-onsite" />
+  <component name="RunManager" selected="Python.20190222">
+    <configuration name="20190222" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="during_lectures" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_01/00_intro" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../during_lectures" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_01/00_intro/01_coding.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../during_lectures/20190222.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,7 +169,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="02_big_python" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Challenge: the game" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python-fundamentals" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../labs/python-fundamentals/src/06_classes_objects_methods" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../labs/python-fundamentals/src/06_classes_objects_methods/Challenge_game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python Console (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-onsite" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -167,14 +198,56 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_01/00_intro" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_01/00_intro/02_big_python.py" />
+      <option name="SCRIPT_NAME" value="/Python Console" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python Console" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python-fundamentals" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="/Python Console" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Queue_class" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Extras" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Extras/datastructures_and_algorithms" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Extras/datastructures_and_algorithms/Queue_class.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -182,8 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.02_big_python" />
-        <item itemvalue="Python.01_coding" />
+        <item itemvalue="Python.20190222" />
+        <item itemvalue="Python.Python Console (1)" />
+        <item itemvalue="Python.Queue_class" />
+        <item itemvalue="Python.Python Console" />
+        <item itemvalue="Python.Challenge: the game" />
       </list>
     </recent_temporary>
   </component>
@@ -200,48 +276,81 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="927" height="1055" extended-state="4" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.42035398" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20765027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49562842" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49945354" weight="0.32937366" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49945354" weight="0.32937366" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5043716" side_tool="true" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.7136612" weight="0.32829374" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20765027" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32937366" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32937366" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32937366" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../labs/python-fundamentals/src/06_classes_objects_methods/Challenge_classes.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/week_01/00_intro/01_coding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week_01/00_intro/02_big_python.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="65" lean-forward="true" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week_01/01_CLI/cli_exercises.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+          <first_editor relative-caret-position="750">
+            <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
           </first_editor>
           <second_editor />
         </state>
@@ -250,8 +359,163 @@
     <entry file="file://$PROJECT_DIR$/week_01/02_git_github/github_exercises.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="525">
+            <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+          </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_01/03_basics_variables/01_calculator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_01/03_basics_variables/02_print_pi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_01/03_basics_variables/03_circumference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_01/03_basics_variables/04_rectangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_01/03_basics_variables/05_miles_runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_01/03_basics_variables/06_population.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_01/03_basics_variables/07_conversion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_01/03_basics_variables/08_trip_cost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_01/mini_projects/virus.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../labs/python-fundamentals/src/03_more_datatypes/3_tuples/04_15_tuple_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_comm/rpc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../labs/python-fundamentals/src/04_conditionals_loops/03_01_divisible.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../labs/python-fundamentals/src/04_conditionals_loops/03_02_month.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_01/00_intro/01_coding.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../during_lectures/20190221.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="756" selection-start-line="756" selection-end-line="756" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../labs/python-fundamentals/src/04_conditionals_loops/03_04_prime.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../labs/python-fundamentals/src/04_conditionals_loops/03_03_for.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../labs/python-fundamentals/src/06_classes_objects_methods/Challenge_game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../labs/python-fundamentals/src/06_classes_objects_methods/Challenge_classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Extras/datastructures_and_algorithms/Queue_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-301">
+          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+          <folding>
+            <element signature="e#222#541#0" />
+            <element signature="e#582#739#0" />
+            <element signature="e#774#991#0" />
+            <element signature="e#1030#1439#0" />
+            <element signature="e#1528#1832#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../during_lectures/20190222.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="155" column="22" lean-forward="true" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
         </state>
       </provider>
     </entry>
