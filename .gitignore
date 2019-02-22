@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Virtual Environments #
 ########################
 env/
@@ -66,3 +67,7 @@ Thumbs.db
 ###########
 *.pem
 
+=======
+.idea
+venv
+>>>>>>> 357760274d3ac89d457f4e52f49ba640c9a85b39
