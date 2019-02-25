@@ -19,11 +19,27 @@ Example output:
 '''
 
 
+def count_cases(text):
+    lowercount = 0
+    uppercount = 0
+    punctcount = 0
+    punctuations = [",", ".", "!", "?", ":", ";", "(", ")"]
+    my_dict = {}
+
+    for i in text:
+        if i in punctuations:
+            punctcount += 1
+        elif i == i.lower():
+            lowercount += 1
+        elif i == i.upper():
+            uppercount += 1
+
+    my_dict["Upper case"] = uppercount
+    my_dict["Lower case"] = lowercount
+    my_dict["Punctuaction"] = punctcount
+    return my_dict
 
 
-
-
-
-
-
-
+text = input("Type a sentence, please:")
+output = count_cases(text)
+print(output)

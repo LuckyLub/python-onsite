@@ -13,3 +13,16 @@ The output should look something like this:
 	10|20|30|40|50|60|70|80|90|100|
 
 '''
+
+my_list = []
+
+for i in range(10):
+    my_list.append([])
+    number1 = i + 1
+    for j in range(10):
+        number2 = j + 1
+        my_list[i].append(number1 * number2)
+
+for rows in my_list:
+    print(rows)
+

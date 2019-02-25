@@ -7,3 +7,15 @@ Take two numbers from the user, an upper and lower bound. Using a loop, calculat
 		The sum is: 5050
 		The average is: 50.5
 '''
+
+
+
+def bound_sum(lower, upper):
+    total = 0
+    for i in range (lower, upper+1, 1):
+        total += i
+    average = total/(upper-lower+1)
+
+    return total, average
+
+print(bound_sum(int(input("Give a lower bound.")),int(input("Give a upper bound."))))

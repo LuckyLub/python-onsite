@@ -12,3 +12,21 @@ l, h, e, o
 For letters that are the same frequency, the order does not matter.
 
 '''
+
+def most_frequent(text):
+    text_set = set(text)
+    counter_list = []
+    final_list = []
+
+    for letter in text_set:
+        counter_list.append([text.lower().count(letter), letter.lower()])
+    counter_list.sort()
+
+    for duo in counter_list:
+        final_list.append(duo[1])
+
+    return final_list
+
+
+print(most_frequent("Here is some text I wrote today."))
+
