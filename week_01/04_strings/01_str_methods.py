@@ -15,3 +15,8 @@ For this exercise, demonstrate the following string methods below:
 - find
 
 '''
+text = "This is line of text, also known as a string.       aaaaa"
+print(text)
+print(text.strip(" a"))
+print(text.replace("string", "book"))
+print(text.find("text"))
