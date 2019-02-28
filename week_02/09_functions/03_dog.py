@@ -9,3 +9,16 @@ Write a program with the following three functions:
 
 '''
 
+
+def bark():
+    print("bark bark")
+
+
+def eat(food_item, amount):
+    print(f"The dog ate {amount} of {food_item}.")
+
+
+def sleep():
+    from time import sleep
+    sleep(5)
+

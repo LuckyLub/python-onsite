@@ -19,3 +19,13 @@ so to make it a bit harder, here are some rules to follow.
 4) Put a blank line between each verse of the song.
 
 '''
+
+
+
+'''99 bottles of beer on the wall, 99 bottles of beer.
+Take one down and pass it around, 98 bottles of beer on the wall.'''
+
+
+for i in range(0, 100, -1):
+    print(f'{i} bottles of beer on the wall, {i} bottles of beer.\n'
+          f'Take one down and pass it around, {i} bottles of beer on the wall.')

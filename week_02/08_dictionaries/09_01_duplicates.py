@@ -16,13 +16,11 @@ def duplicate_checker(user_list):
 
     for i in user_list:
         my_dict[i] += 1
-
-    for i in my_dict:
         if my_dict[i] > 1:
-            my_dict[i] = True
-        else:
-            my_dict[i] = False
+            return True
 
-    return my_dict
+    return False
+
+
 
 print(duplicate_checker(inputlist))
