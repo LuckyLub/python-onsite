@@ -38,3 +38,35 @@ http://www.pythontutor.com/visualize.html#mode=edit
 for better visual understanding and support in creating the stack diagram.
 
 '''
+
+
+def leap_year_checker(year):
+    if year % 4 == 0:
+        first = True
+    else:
+        first = False
+
+    if year % 100 == 0:
+        second = False
+    else:
+        second = True
+
+    if year % 400 == 0:
+        third = True
+    else:
+        third = False
+
+    if first == True and second == True:
+        return True
+    elif second == False and third == True:
+        return True
+    return False
+
+
+leap_years = []
+
+for i in range(1900, 10**5, 1):
+    leap_years.append((i, leap_year_checker(i)))
+
+print(leap_years)
+

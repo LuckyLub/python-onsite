@@ -26,6 +26,11 @@ so to make it a bit harder, here are some rules to follow.
 Take one down and pass it around, 98 bottles of beer on the wall.'''
 
 
-for i in range(0, 100, -1):
-    print(f'{i} bottles of beer on the wall, {i} bottles of beer.\n'
-          f'Take one down and pass it around, {i} bottles of beer on the wall.')
+for i in range(100,0,-1):
+    if i == 1:
+        s = ""
+    else:
+        s = "s"
+
+    print(f'{i} bottle{s} of beer on the wall, {i} bottle{s} of beer.\n'
+          f'Take one down and pass it around, {i} bottle{s} of beer on the wall.\n')

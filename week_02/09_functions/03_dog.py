@@ -22,3 +22,17 @@ def sleep():
     from time import sleep
     sleep(5)
 
+while True:
+    bark()
+    answer = input("The dog is telling you that he is hungry. Do you want to feed him? (yes/no)")
+    if answer.lower() == "no":
+        break
+    else:
+        food = input("What would you like to feed him?")
+        amount = input(f'How many {food} do you want to give him?')
+        eat(food, amount)
+        print("That was some good stuff! He'll go for a nap now.")
+        sleep()
+
+
+
