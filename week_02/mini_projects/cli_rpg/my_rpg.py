@@ -1,4 +1,6 @@
+import sys
 import random
+import time
 
 class Hero:
 
@@ -44,10 +46,40 @@ class Hero:
             return "lost"
 
 
-
 class Opponent:
 
     def __init__(self):
         self.live = 100
         self.power = 10
+
+
+intro_part1 = "----------------------------Welcome to Judith.----------------------------\n\n" \
+              "The goal of this game is to rescue the princess Judith. This can only be \n" \
+              "achieved when you've reached level 10 and conquered the villain of this\n" \
+              "story:\n" \
+              "                               Lazarus.\n\n" \
+
+
+intro_part2 = "Let us begin the story." \
+              "---------------------------------------------------------------------------" \
+
+intro_part3 = "A long war was raging in the mainlands of Moracle. It lasted for almost 55\n" \
+              "years and it didn't look like it was going to change any time soon.\n " \
+              "King Josh had only reigned in times of war. He did not now any better. His \n" \
+              "father died when he was only 14 years old, 30 years ago. Last of his\n" \
+              "bloodline, he was strongly advised to mary as soon as he would turn 18. He\n " \
+              "did. He married to Brigitte and together they got a girl, named Judith." \
+
+intro_part4 = "While the war was raging on in the mainland, live on the coast was" \
+              "relatively quiet.Focused on the war in the mainland"
+
+
+
+for char in intro:
+    time.sleep(0.05)
+    sys.stdout.write(char)
+    sys.stdout.flush()
+time.sleep(5)
+
+print()
 

@@ -15,104 +15,96 @@ import matplotlib.pyplot as plt
 
 plt.interactive(True)
 
-print("aaaaaaaa")
 
-def get_number():
-    return random.randint(1,100)
+def get_number(minimum, maximum):
+
+    return random.randint(minimum, maximum)
+
 
 def check_number(computer_number, persons_guess):
-    while True:
-        if computer_number > persons_guess:
-            return "higher"
-        elif computer_number < persons_guess:
-            return "lower"
-        else:
-            return "won"
 
-def guess_determination(hint, strategy, turn=0, previous_guesses =[]):
+    if computer_number > persons_guess:
+        return "higher"
+
+    elif computer_number < persons_guess:
+        return "lower"
+
+    else:
+        return "won"
+
+
+def guess_determination(hint, strategy, minimum_range, maximum_range, turn=0, previous_guesses =[]):
 
     if strategy == 1:
         if turn == 0:
             new_guess = 1
+
         else:
-            new_guess = previous_guesses[previous_guesses.__len__()-1] + 1
+            new_guess = minimum_range + 1
 
         return new_guess
 
     if strategy == 2:
-        correction_list = [25, 13, 6, 3,1,1,1]
-
-        if turn == 0:
-            new_guess = 50
-            return new_guess
-        elif hint == "lower":
-            new_guess = previous_guesses[previous_guesses.__len__()-1] - correction_list[turn-1]
-        else:
-            new_guess = previous_guesses[previous_guesses.__len__()-1] + correction_list[turn-1]
+        new_guess = round(minimum_range + ((maximum_range-minimum_range)/2))
         return new_guess
 
 
 
 strategy_list = [1,2]
-attempts = 1000
-results_list = [[],[],]
+attempts = 10000
+results_list = [[],[]]
+min_range_computer = 1
+max_range_computer = 200
+turn = 0
 
 
 for strategy in strategy_list:
     for attempt in range(attempts):
-        guesses = []
-        computer_number = get_number()
-        new_guess = guess_determination(None, strategy)
-        guesses.append(new_guess)
-        result = check_number(computer_number,new_guess)
+        computer_number = get_number(min_range_computer, max_range_computer)
+        new_guess = guess_determination(None, strategy, min_range_computer, max_range_computer)
         turn = 1
+        result = check_number(computer_number, new_guess)
+
+        if result == "lower":
+            max_guess = new_guess
+            min_guess = min_range_computer - 1
+        else:
+            min_guess = new_guess
+            max_guess = max_range_computer
+
+
         while result != "won":
-            new_guess = guess_determination(result, strategy,turn,guesses)
-            guesses.append(new_guess)
-            result = check_number(computer_number, new_guess)
+            new_guess = guess_determination(result, strategy, min_guess, max_guess, turn)
             turn += 1
-            # print("computer", computer_number)
-            # print("guess", new_guess)
-            # print(strategy, turn, result)
+            result = check_number(computer_number, new_guess)
+
+            if result == "lower":
+                max_guess = new_guess
+
+            else:
+                min_guess = new_guess
+
         results_list[strategy-1].append([turn, new_guess])
 
-print(results_list)
-
-
-
-count_list_strategy_1 = {}
-count_list_strategy_2 = {}
 
 outcome_list1 = []
 outcome_list2 = []
-outcome_list3 = []
+
+average_turns1 = 0
+average_turns2 = 0
 
 for item in results_list[0]:
     outcome_list1.append(item[0])
+    average_turns1 += item[0]
+average_turns1 = average_turns1/results_list[0].__len__()
 
 for item in results_list[1]:
     outcome_list2.append(item[0])
+    average_turns2 += item[0]
+average_turns2 = average_turns2/results_list[0].__len__()
 
-
-#
-# for item in results_list[0]:
-#     if item[1] in count_list_strategy_1.keys():
-#         count_list_strategy_1[item[1]] += 1
-#     else:
-#         count_list_strategy_1[item[1]] = 1
-#
-#
-#     elif item[0] == 2:
-#         if item[1] in count_list_strategy_2.keys():
-#             count_list_strategy_2[item[1]] += 1
-#         else:
-#             count_list_strategy_2[item[1]] = 1
-
-
-# print(outcome_list1)
-# print(outcome_list2)
-
-
+print(f"Average turns Strategy 1: {average_turns1}")
+print(f"Average turns Strategy 2: {average_turns2}")
 
 
 # Overlay 2 histograms to compare them
@@ -130,8 +122,8 @@ def overlaid_histogram(data1, data2, n_bins = 0, data1_name="", data1_color="#53
 
     # Create the plot
     _, ax = plt.subplots()
-    ax.hist(data1, bins = 20, color = data1_color, alpha = 1, label = data1_name)
-    ax.hist(data2, bins = 7, color = data2_color, alpha = 0.75, label = data2_name)
+    ax.hist(data1, bins = 10, color = data1_color, alpha = 1, label = data1_name)
+    ax.hist(data2, bins = 9, color = data2_color, alpha = 0.75, label = data2_name)
     ax.set_ylabel(y_label)
     ax.set_xlabel(x_label)
     ax.set_title(title)
