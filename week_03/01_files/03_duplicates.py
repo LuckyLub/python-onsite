@@ -18,3 +18,21 @@ Source: Read through the "Files" chapter in Think Python 2e:
 http://greenteapress.com/thinkpython2/html/thinkpython2015.html
 
 '''
+
+
+import hashlib
+import os
+
+def duplicate_checker(dir, fileformat):
+    list_dir = os.walk(dir)
+    uid_file =[]
+    for list in list_dir[2]:
+        for item in list:
+            uid_file.append(hashlib.md5(item))
+
+    print([x[2] for x in os.walk(directory)])
+    print(uid_file)
+
+directory = "ProjectDocuments/MP3"
+
+duplicate_checker(directory,10)
