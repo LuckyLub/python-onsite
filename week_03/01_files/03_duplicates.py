@@ -20,19 +20,44 @@ http://greenteapress.com/thinkpython2/html/thinkpython2015.html
 '''
 
 
-import hashlib
+# import hashlib
 import os
 
-def duplicate_checker(dir, fileformat):
-    list_dir = os.walk(dir)
-    uid_file =[]
-    for list in list_dir[2]:
-        for item in list:
-            uid_file.append(hashlib.md5(item))
+# def duplicate_checker(dir, fileformat):
+#     list_dir = os.walk(dir)
+#     files = [x[2] for x in os.walk(dir)][x[2] for x in os.walk(dir)]
+#     for file in files[0]:
+#         with open(file, 'r') as openfile:
+#             file_content = openfile.read()
+#             m = hashlib.sha3_224()
+#             m.update(file_content)
+#             m.digest()
+#             print(m)
 
-    print([x[2] for x in os.walk(directory)])
-    print(uid_file)
+
+
 
 directory = "ProjectDocuments/MP3"
+a = [x[0] for x in os.walk(directory)]
+b = [x[1] for x in os.walk(directory)]
+c = [x[2] for x in os.walk(directory)]
+files = []
 
-duplicate_checker(directory,10)
+for i in range(c.__len__()):
+    for j in range(c[i].__len__()):
+        # print("i",i, "j", j)
+        # print("a",a[i])
+        # print("c",c[i][j])
+        files.append(str(a[i]+"/"+c[i][j]))
+
+
+print("a", a)
+print("b", b)
+print("c", c)
+print(files)
+print(c.__len__())
+print(c[0].__len__())
+
+a=1
+
+# duplicate_checker(directory,10)
