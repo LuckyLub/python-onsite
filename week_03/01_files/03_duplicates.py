@@ -20,44 +20,43 @@ http://greenteapress.com/thinkpython2/html/thinkpython2015.html
 '''
 
 
-# import hashlib
+import hashlib
 import os
 
-# def duplicate_checker(dir, fileformat):
-#     list_dir = os.walk(dir)
-#     files = [x[2] for x in os.walk(dir)][x[2] for x in os.walk(dir)]
-#     for file in files[0]:
-#         with open(file, 'r') as openfile:
-#             file_content = openfile.read()
-#             m = hashlib.sha3_224()
-#             m.update(file_content)
-#             m.digest()
-#             print(m)
 
-
-
-
+#setting up the directory and subdirectories, and collecting all files.
 directory = "ProjectDocuments/MP3"
-a = [x[0] for x in os.walk(directory)]
-b = [x[1] for x in os.walk(directory)]
-c = [x[2] for x in os.walk(directory)]
-files = []
+dirs = [x[0] for x in os.walk(directory)]
+files = [x[2] for x in os.walk(directory)]
 
-for i in range(c.__len__()):
-    for j in range(c[i].__len__()):
-        # print("i",i, "j", j)
-        # print("a",a[i])
-        # print("c",c[i][j])
-        files.append(str(a[i]+"/"+c[i][j]))
+#set up a dictionary which will help us return the duplicates.
+files_by_path = {}
 
+for i in range(files.__len__()):
+    for j in range(files[i].__len__()):
+        filepath = os.path.join(dirs[i], files[i][j])
+        hash = hashlib.md5()
 
-print("a", a)
-print("b", b)
-print("c", c)
-print(files)
-print(c.__len__())
-print(c[0].__len__())
+        #open the file in read modus and in binary. set a first chunk to be processed by the hash-function
+        with open(filepath, "rb") as fin:
+            chunck = fin.read(1024)
 
-a=1
+            # if i don't set a range, it keeps on running. I guess cause the files are too large?
+            # chunks of the file are processed into a hash-function
+            for r in range(100):
+                hash.update(chunck)
+                chunk = fin.read(1024)
+            outcome_hash = hash.hexdigest()
 
-# duplicate_checker(directory,10)
+            #now i add the hashvalues to a dictionary as a key, and set their path as value, so that we can see
+            #which hashfunction is related to which paths.
+            if outcome_hash in files_by_path.keys():
+                files_by_path[outcome_hash].append(filepath)
+            else:
+                files_by_path[outcome_hash] = [filepath]
+
+#now I check if there are multiple values to the same key. if that's the case, it are duplicates.
+for v in files_by_path.values():
+    if v.__len__() > 1:
+        duplicates = "\n".join(str(x) for x in v)
+        print(f"The following files are duplicates: {duplicates}")
