@@ -16,6 +16,7 @@ http://greenteapress.com/thinkpython2/html/thinkpython2015.html
 
 '''
 
+
 import anagram_creator
 
 def store_anagrams(anagram_dict, shelf):
@@ -27,12 +28,10 @@ def read_anagrams(word, anagram_dict):
             if item == word:
                 return v
 
+if __name__ == '__main__':
 
-shelf1 = []
-anagram_map = anagram_creator.all_anagrams('words.txt')
-anagram_creator.print_anagram_sets_in_order(anagram_map)
-store_anagrams(anagram_map, shelf1)
-print(read_anagrams("aah",anagram_map))
-
-# eight_letters = anagram_creator.filter_length(anagram_map, 8)
-# anagram_creator.print_anagram_sets_in_order(eight_letters)
+    shelf1 = []
+    anagram_map = anagram_creator.all_anagrams('words.txt')
+    anagram_creator.print_anagram_sets_in_order(anagram_map)
+    store_anagrams(anagram_map, shelf1)
+    print(read_anagrams("aah",anagram_map))

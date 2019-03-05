@@ -8,3 +8,14 @@ print(list_[1])
 This raises and exception that needs to be handled.
 
 '''
+
+class ListTooSmall(Exception):
+    pass
+
+list_ = ["hello world!"]
+
+try:
+    print(list_[1])
+
+except IndexError:
+    raise ListTooSmall

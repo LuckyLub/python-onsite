@@ -6,3 +6,20 @@ with specific except statements, and continue to do the calculation
 only if neither of them applies.
 
 '''
+
+files = ["integers.txt", "blabla"]
+
+for file in files:
+    try:
+        with open(file, "r") as fin:
+            first_num = int(fin.read().split()[0])
+
+    except IOError:
+        pass
+
+    except ValueError:
+        pass
+
+    else:
+        print(file,": ", 3/first_num)
+

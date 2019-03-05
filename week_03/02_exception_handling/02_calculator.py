@@ -8,3 +8,26 @@ the script should handle:
 Test it and make sure it does not crash when you enter incorrect values.
 
 '''
+
+flag = True
+while flag:
+
+    try:
+        num1 = float(input("Give me your first number."))
+        num2 = float(input("Give me your second number."))
+
+    except ValueError:
+        print("That is an incorrect input, please make sure your input are numbers.")
+
+    else:
+        try:
+            print(num1/num2)
+
+        except ZeroDivisionError:
+            print("You can't devide by zero.")
+
+        else:
+            flag = False
+
+
+
