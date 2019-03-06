@@ -32,9 +32,9 @@ files = [x[2] for x in os.walk(directory)]
 #set up a dictionary which will help us return the duplicates.
 files_by_path = {}
 
-for i in range(files.__len__()):
-    for j in range(files[i].__len__()):
-        filepath = os.path.join(dirs[i], files[i][j])
+for dir in range(dirs.__len__()):
+    for file in range(files[dir].__len__()):
+        filepath = os.path.join(dirs[dir], files[dir][file])
         hash = hashlib.md5()
 
         #open the file in read modus and in binary. set a first chunk to be processed by the hash-function
@@ -54,6 +54,7 @@ for i in range(files.__len__()):
                 files_by_path[outcome_hash].append(filepath)
             else:
                 files_by_path[outcome_hash] = [filepath]
+
 
 #now I check if there are multiple values to the same key. if that's the case, it are duplicates.
 for v in files_by_path.values():
