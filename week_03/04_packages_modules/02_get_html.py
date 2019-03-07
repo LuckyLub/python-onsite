@@ -11,3 +11,7 @@ TIP:
 '''
 
 
+import requests
+codingnomads = requests.get("https://codingnomads.co/")
+print(codingnomads.text)
+
