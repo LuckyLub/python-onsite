@@ -5,3 +5,7 @@ standard library. What happens if you type:
 - import antigravity
 
 '''
+
+import this # returns the zen of python
+import antigravity #cool images
+

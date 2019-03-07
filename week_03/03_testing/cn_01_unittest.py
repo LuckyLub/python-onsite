@@ -7,3 +7,10 @@ test should pass.
 Also include a test that does not pass.
 
 '''
+
+
+def adding_things(things, otherthings):
+
+    result = things + otherthings
+
+    return result
