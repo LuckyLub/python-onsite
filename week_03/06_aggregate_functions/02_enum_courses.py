@@ -11,3 +11,6 @@ for i in range(len(courses)):
 '''
 
 classes = ['Intro', 'Intermediate', 'Advanced', 'Epic Hero']
+
+for index, item in enumerate(classes):
+    print(f'Number: {index + 1}, Item: {item}')

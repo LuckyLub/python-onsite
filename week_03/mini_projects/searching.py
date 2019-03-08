@@ -10,3 +10,20 @@ folder name with a bigger folder. This program should work for any specified fol
 
 '''
 
+import os
+
+start_folder = "/home/robert-jan"
+
+my_dictionary = {}
+dirs = [file[0] for file in os.walk(start_folder)]
+files = [file[2] for file in os.walk(start_folder)]
+
+for index, dir in enumerate(dirs):
+    for file in files[index]:
+        if file[-3:] == "jpg":
+            if dir not in my_dictionary.keys():
+                my_dictionary[dir]= []
+            my_dictionary[dir].append(file)
+
+print(my_dictionary)
+

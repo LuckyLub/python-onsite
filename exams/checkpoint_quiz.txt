@@ -19,59 +19,116 @@ Ok that's all, now let's get to practicing!! :)
 
 - Using the command line, how do you:
     - change directories?
+cd
     - list the contents of a folder?
+ls
     - print the path of the current directory?
+pwd
     - move a file from one location to the another?
+mv filename.txt dir
     - copy a file from one location to another?
+cp filename.txt dir
     - create a file?
+touch file
     - create a folder?
+mkdir name_folder
     - delete a file?
+rm file
     - delete a folder?
+rm -rf folder
     - delete a folder that contains a file?
+rm -rf folder
     - print the contents of a file?
+cat file
     - edit the contents of a file?
+vim filename, i, edit, esc, :wq | or with echo "something" >> filename
 
 - Answer the following question about Git and Github:
     - What is a branch?
+A branch is a copy of a master, that stands alone. You can bring it back to a master, or develop i
+t further as a new master.
     - What is a remote?
+Github serves as a remote. It's a non-local dir where you send your code to.
 
 - What are the commands to do the following?
-    - initialize a git repository
+    - initialize a git repository1.
+git init
     - clone a repository from Github
+git clone (URL)
     - add a file to the staging area
+git add filename (. for all)
     - make a commit
+git commit -m "here comes your message"
     - push to Github
+git push origin master (depends on how you named your remote and your branch)
     - pull from Github
+git pull origin master
     - see the names of the branches
+git branch
     - see the names of the remotes
+git remote -v
     - add a new remote
+git remote add name_your_remote  "remoteurl"
 
 - Describe a variable and a value through their relationship.
+variable is like a codename to a value, which makes it easy to call the specific value. A variable can only have one value but a value can be assigned to multiple variables. example: a = 1 and b =1
+
 
 - What are five common data types in Python?
+integers, strings, floats, boolean, lists, sets, dictionaries, tuples
 
 - What is the difference between an expression and a statement?
+expression evaluates into a value. 
 
 - What are relational operators?
+ ==, =<, =>, !=
 
 - What is the difference between == and = ?
+first one compares two values the other sets a value to a variable.
 
 - Demonstrate the use of an if/elif/else conditional.
+a = 1
+b = 1
+
+if a < b:
+	print(f'{a} is smaller than {b}')
+elif a > b:
+	print(f'{a} is bigger than {b}')
+else:
+	print(f'{a} equals {b}')
+
 
 - What does mean to have a function that "takes" an argument?
+sometimes a function needs an input, otherwise it is not able to run.
+
+def my_function(input):
+	return input - 1
+
+a = my_function(2)
 
 - What is a return value?
+The value that is returned after calling function. All other (local) variables and values of the function are lost.
 
 - How do you import a class to one of your programs?
+from file import class
 
 - Do parameters and variables inside of a function exist outside of it?
 Why or why not?
+No. Otherwise you would have a risk that your variables  would get intangled and overwritten.
+
 
 - What is the difference between a "fruitful" function and a void function?
+A fruitful function returns a value, a void one does not.
 
 - What does a void function always return in Python?
+None
+
 
 - What are some of the reasons we separate our code into functions?
+Easier to reuse.
+Easier to debug.
+Easier to read.
+
 
 - What is the difference between the following two statements?
     import math
@@ -80,56 +137,129 @@ Why or why not?
     <and>
     import math as m
 
+The first one imports the whole module.
+The second one imports all the functions and classes.
+the third one imports the whole module, but when you want to use it, you should refer to it as m.
+
     How can you use the functions of the math module in each case?
+if pi is the function we want to call:
+math.pi
+pi
+m.pi
+
 
 - What is an index?
+It describes the location of something within an itterable.
 
 - How do you use slicing to produce the string "coding" from the string
 "I love coding!!!"?
+"I love coding!!!"[7:13]
+
 
 - How do you invoke the replace() method on the string
 'coding is the best' to replace all 's' characters with 'z' characters?
+old_string = "coding is the best"
+new_string = old_string.replace("s", "z")
 
 - What is the most important difference between a list and a string?
+a list is mutable, a string is not.
 
 - How do you use a delimiter other than a whitespace with the split() method?
+By writing it between the brackets and between quotes. In the previous question old_string.split("s") would result in ["coding i","s the best"]
 
 - If two objects are identical, does that also make them equivalent?
 Why or why not? How can you prove it in code?
+equivalent refers to the value. identical to the memory.
+Yes. Since it refers to the same space in memory, it holds the same value. With the  == statement
+
+a = [1]
+b = a
+
+a ==  b
+--> True
+
+also:
+a is b
+-- True
+
 
 - What is it called when an object has more than one reference to it?
+aliassing
 
 - How do you add an item to the dictionary first_dict using square
     brackets?
+first_dict["a_key"] = "a_value"
+
 
 - Write an example for-loop to traverse a dictionary loop_dict and
     print out the keys and values.
 
+for k, v in loop_dict.items():
+	print(k,v)
+
+
 - What are the three primary tenants of Object Oriented Programming (OOP)?
+1. Encapsulation: everything exists within an object (class has attributes and methods)
+2. Inheritance: inherit from partent class
+3. Polymorphism: overwrite inheritance
 
 - Why is OOP useful?
+It makes coding compared to other methods relatively small and easy, because after you defined somthing you can call it back as many times as you want.
 
 - What is a class?
+A class is a defined object, which can hold values(attributes) and can have methods, which are basically class-related functions. 
 
 - What are class attributes?
+class related variables that hold a value. Example:
+
+def Chair:
+	legs = 4
 
 - What does it mean when an object is embedded?
+It means that it is located within another object.
 
 - How is a method different than a function?
+a method is class specific, a function is general callable.
 
 - What is the `__init__` method and what is it used for?
+It is a applied when initiating an instance of a class. It is used to set up some unique values (similair in attributes for the class) for the instance.
 
 - Give an example `__init__` method for a `Car` class with attributes:
 `make`, `model` and `year`.
 
+def Car:
+	__init__(self, make, model, year):
+		self.make = make
+		self.model = model
+		self.year = year
+
 - How does a class inherit from another class?
+When defining a class calling that other class, like so:
+
+def Racecar(Car):
+	pass
 
 - Explain the difference between a class attribute and an instance attribute.
+class attribute is an attribute that all instances of a class have in common (though their values can be different), an instance attribute is an attribute specific defined for one instance. For an instance of the previous defined class Car, you could do that like this:
+
+my_car = Car("Ford", "Fiesta", 2000)
+mycar.color = "grey"
 
 - How do you open a file in write mode? Write some example code below.
+open("filepath", "w")
+open("filepath")
+
 
 - Can you have a 'try' without an 'except'? Can you have an 'except' without
 a 'try'? Bonus: How does 'else' fit into this picture?
+No, after a try, there is always an except. Also no. 
+
+try:
+	this
+except ErrorSomething:
+	do this
+else:
+	do that
 
 - Why is the following code bad form?
 
@@ -138,28 +268,44 @@ a 'try'? Bonus: How does 'else' fit into this picture?
     except Exception as exc:
         print(exc)
     except ZeroDivisionError as zde:
-        print zde
+        print(zde)
+
+The second line will catch all exceptions. You should be specific. The third therefore will never occur.
 
 - Write a function that takes in the name of a file, reads the contents
 of that file word by word and places each word in a list, then prints
 the list to the console.
 
+with open("filepath", "r") as fin
+	content = fin.read().split()
+
+print(word)
+
 - Create a custom exception below.
+def MyException(Exception):
+	pass
 
 - Write a very simple function that demonstrates raising the exception from the
 previous question.
 
+a = 1
+b = 1
+
+if a == b:
+	raise MyException("equals")
+
 - Explain the following keywords:
-    -try
-    -except
-    -raise
-    -else
-    -finally
-    -return
-    -break
-    -continue
+    -try: check if this is possible
+    -except: if the try returns an error, defined at the except, it will do what i defined afterwards.
+    -raise: show this error, and show the traceback. Terminates the running of code.
+    -else: if it passed the try, and didn't go into the except statement. Do the thing followed ad the else-statement.
+    -finally: no matter wheter it went into the except or else statement, always do this (does not occur when the raise already took place).
+    -return: after running a function, return the value that is stated here.
+    -break: when you hit this line of code, it ends the function you are running.
+    -continue: when you hit this line of code, it ends the loop you are running, 
 
 - When should you throw an exception rather than catch the exception?
+
 
 - Demonstrate a while loop, and a for loop, that print out every other
 odd number between 1000 and 0 in a descending order:

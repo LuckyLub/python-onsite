@@ -7,3 +7,6 @@ Tip: Use an if statement in the listcomp
 '''
 
 fish_tuple = ('blowfish', 'clownfish', 'catfish', 'octopus')
+
+fish_ish = [fish for fish in fish_tuple if fish[-3:]=="ish"]
+print(fish_ish)
