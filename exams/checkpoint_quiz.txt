@@ -269,8 +269,11 @@ else:
         print(exc)
     except ZeroDivisionError as zde:
         print(zde)
+<<<<<<< HEAD
 
 The second line will catch all exceptions. You should be specific. The third therefore will never occur.
+=======
+>>>>>>> b62422942ee9526109a7131fdee0a7078aff144e
 
 - Write a function that takes in the name of a file, reads the contents
 of that file word by word and places each word in a list, then prints
