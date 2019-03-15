@@ -13,3 +13,18 @@ BONUS: use pagination features to retrieve all posts of all pages in the group
        and save them to the file
 
 '''
+
+from requests_html import HTMLSession
+
+payload = {'username': 'martin-martin', 'pass': 'bali2019'}
+url = 'https://my.freecycle.org/login'
+
+
+session = HTMLSession()
+r = session.post(url, data=payload)
+print(r.text)
+# print(r.links)
+
+# r = session.get('https://groups.freecycle.org/group/DenverCO/posts/all')
+# r = session.get(url)
+# # print(r.text)
