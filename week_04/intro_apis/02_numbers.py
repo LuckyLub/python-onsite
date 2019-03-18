@@ -14,3 +14,57 @@ BONUS:
   - etc. (cycle back to the trivia after year)
 
 '''
+
+import requests
+import json
+
+url = "http://numbersapi.com/"
+
+prime_numbers=[1]
+count = 0
+trans = 2
+cycle = 1
+
+prime_numbers_dict = {}
+
+
+
+for number in range(1, 100):
+    is_prime = True
+    if number != 1:
+        for div in range(2, number):
+            if number % div == 0 and number != div:
+                is_prime = False
+    if is_prime:
+
+        if cycle == 1:
+            prime_numbers_dict[number] = requests.get(url + str(number)).text + "/trivia"
+            count += 1
+            if count == trans:
+                trans = trans ** 2
+                cycle = 2
+
+        elif cycle == 2:
+            prime_numbers_dict[number] = requests.get(url + str(number)).text + "/math"
+            count += 1
+            if count == trans:
+                trans = trans ** 2
+                cycle = 3
+
+        elif cycle == 3:
+            prime_numbers_dict[number] = requests.get(url + str(number)).text + "/date"
+            count += 1
+            if count == trans:
+                trans = trans ** 2
+                cycle = 4
+
+        else:
+            prime_numbers_dict[number] = requests.get(url + str(number)).text + "/year"
+            count += 1
+            if count == trans:
+                trans = trans ** 2
+                cycle = 1
+
+with open("numbers.json", "w") as fout:
+    json.dump(prime_numbers_dict, fout)
+

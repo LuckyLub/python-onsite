@@ -22,9 +22,12 @@ url = 'https://my.freecycle.org/login'
 
 session = HTMLSession()
 r = session.post(url, data=payload)
-print(r.text)
-# print(r.links)
+r = session.get('https://groups.freecycle.org/group/DenverCO/posts/all')
+titles = r.html.find("#group_posts_table > tr > td:nth-child(2) > a")
 
-# r = session.get('https://groups.freecycle.org/group/DenverCO/posts/all')
-# r = session.get(url)
-# # print(r.text)
+with open("Documents/denver_posts.txt", "w") as fout:
+    for title in titles:
+        fout.write(title.text)
+        fout.write("\n")
+
+
