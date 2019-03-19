@@ -14,8 +14,11 @@ import requests
 
 file = "Documents/rhymes.txt"
 
+repeats = 10
+count = 0
+
 with open(file,"w") as fout:
-    for i in range(10):
+    while True:
         url_chuck = "https://api.chucknorris.io/jokes/random"
         joke = requests.get(url_chuck).json()["value"]
         last_word = joke.split()[-1].strip(".!? ")
@@ -28,3 +31,7 @@ with open(file,"w") as fout:
 
         fout.write(joke + "\n")
         fout.write(rhyme_word + "\n")
+
+        count += 1
+        if count == repeats:
+            break

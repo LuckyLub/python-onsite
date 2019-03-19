@@ -14,4 +14,32 @@ HINTS:
 BONUS: Explore the logging package for easier tracking
 
 '''
+import requests
+from datetime import datetime
+from datetime import timedelta
+from time import sleep
+
+key_path = "Documents/nomics_key"
+with open(key_path,"r") as fin:
+    key = fin.read()
+url = f"https://api.nomics.com/v1/prices?key={key}"
+
+time_to_fetch = 10 #in minutes
+start_time = datetime.now()
+end_time = start_time + timedelta(minutes=time_to_fetch)
+
+results = {}
+
+while True:
+
+    res = requests.get(url).json()
+    now = datetime.now()
+
+    for dict in res:
+        if dict["currency"] == "BTC":
+            results[now.__str__()] = dict["price"]
+    print(results)
+    sleep(10)
+    if now > end_time:
+        break
 
