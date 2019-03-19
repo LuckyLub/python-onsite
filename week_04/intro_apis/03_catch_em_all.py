@@ -15,19 +15,25 @@ BONUS: Using your script, create a folder and download the main 'front_default'
 import requests
 
 url = "https://pokeapi.co/api/v2/pokemon/"
+file = "Documents/pokemonheights.txt"
 pokeID = 0
 
 print(requests.get("https://pokeapi.co/api/v2/pokemon/1").json()["name"])
 print(requests.get("https://pokeapi.co/api/v2/pokemon/1").json()["height"])
 
-with open("pokemonheights.txt", "w") as fout:
-    for pokeID in range(1, 400):
-        res = requests.get(url)
-        if res.__init__() == "<Response [404]>":
-            break
-        poke_name = res.json()["name"]
-        poke_height = res.json()["height"]
-        fout.write(f"{poke_name}: {poke_height}cm\n")
+poke_dict = {}
+
+while True:
+    pokeID += 1
+    print(pokeID)
+    res = requests.get(url + str(pokeID))
+    if res.__str__() == "<Response [404]>":
+        break
+    poke_dict[res.json()["name"]] = res.json()["height"]
+
+with open(file, "w") as fout:
+    for k, v in poke_dict.items():
+        fout.write(f"{k}: {v}\n")
 
 
 

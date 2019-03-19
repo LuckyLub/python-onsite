@@ -28,7 +28,6 @@ cycle = 1
 prime_numbers_dict = {}
 
 
-
 for number in range(1, 100):
     is_prime = True
     if number != 1:
@@ -65,6 +64,6 @@ for number in range(1, 100):
                 trans = trans ** 2
                 cycle = 1
 
-with open("numbers.json", "w") as fout:
+with open("Documents/numbers.json", "w") as fout:
     json.dump(prime_numbers_dict, fout)
 
