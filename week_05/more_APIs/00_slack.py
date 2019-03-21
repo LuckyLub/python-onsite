@@ -38,6 +38,7 @@ slack_channel = "CGUDWETHR"
 sc = SlackClient(token)
 
 res = sc.api_call("channels.history", channel=slack_channel)
+pprint(res["messages"])
 
 output_list = []
 
@@ -59,6 +60,7 @@ for dict_ in res["messages"]:
             output_list.append(output_dict)
 
 output_file_path = "Documents/slack_output.json"
+
 with open(output_file_path, "w") as fout:
     json.dump(output_list, fout)
 
