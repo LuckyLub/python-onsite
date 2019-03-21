@@ -2,16 +2,22 @@ Using pgadmin:
 
 - create a new blank database with the name "car_dealership"
 
+    done
+
 - create a new table named "users_cars" with the following fields:
     - id (auto increment)
     - userID (refers to "id" in users table)
     - carID (refers to "id" in cars table)
+
+    done
 
 
 - create a new table named "users" with the following fields
     - id (auto increment)
     - first name
     - last name
+
+    done
 
 - create a new table named "cars" with the following fields
     - id (auto increment)
@@ -20,25 +26,65 @@ Using pgadmin:
     - color
     - year
 
+    done
+
 - populate these tables with at least 5 records each - the more the merrier
+
+    done
+
 
 - Write the SQL queries to accomplish the following: (write each of your queries below for review)
 
     - select all records from users
 
+    SELECT * FROM public.users_car
+
 
     - select all records from cars where car make = "Toyota"
+
+    SELECT * FROM public.cars WHERE "make" = 'Toyota';
 
 
     - use a join to select the first name and car model of every user who has bought a car
 
+    SELECT u."first name", c."model"
+    FROM public.cars as c
+    JOIN public.users_cars as uc
+    ON c."id" = uc."carID"
+    JOIN public.users as u
+    ON u."id" = uc."userID";
+
 
     - use a join to select the first and last name of everyone who has bought a red car
 
+    SELECT u."first name", u."last name"
+    FROM public.cars as c
+    JOIN public.users_cars as uc
+    ON c."id" = uc."carID"
+    JOIN public.users as u
+    ON u."id" = uc."userID"
+    WHERE c."color" = 'red';
 
     - use an insert statement to create a new record in each table
 
+    INSERT INTO public.cars(
+        make, model, color, year)
+        VALUES ('Opel', 'Astra', 'yellow', '1995');
+
+    INSERT INTO public.users(
+        "first name", "last name")
+        VALUES ('Jacky', 'Daniels');
+
+    INSERT INTO public.users_cars(
+        "userID", "carID")
+        VALUES ('7', '7');
 
     - use sql to update a record in the "cars" table
 
+    UPDATE public.cars
+        SET color='purple', year=2011
+        WHERE "make" = 'Ford';
+
     - delete one record from the database
+
+    DELETE FROM public.cars WHERE "make" ='Opel';
