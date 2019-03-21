@@ -39,7 +39,7 @@ def longest_word(list_of_words):
 
     return longest_words
 
-with open("ProjectDocuments/The Marvellous Land of Oz.txt") as file:
+with open("Documents/The Marvellous Land of Oz.txt") as file:
     text = file.read().split()
 
 print(f"The shortest words fount are: {shortest_word(text)}")

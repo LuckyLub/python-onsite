@@ -13,10 +13,31 @@ import tweepy
 
 from Documents import twitter_token
 
+def classifier(nr_of_followers):
+    if nr_of_followers < 10:
+        return "Loser"
+    elif nr_of_followers >= 10 and nr_of_followers < 50:
+        return "Beginner"
+    elif nr_of_followers >= 50 and nr_of_followers < 100:
+        return "Cool"
+    elif nr_of_followers >= 100 and nr_of_followers >= 1000:
+        return "Awesome"
+    else:
+        return "Super star"
+
+
 auth = tweepy.OAuthHandler(twitter_token.API_key, twitter_token.API_secret_key)
 auth.set_access_token(twitter_token.API_token, twitter_token.API_secret_token)
 
-api = tweepy.API(auth)
+api = tweepy.API(auth, wait_on_rate_limit=True)
 
-api.update_status("Learning how to use the API!")
+result = {}
+person = "dan_wegmann"
+followers = api.followers(person)
+result[person] = classifier(followers.__len__())
+
+for person in followers:
+    result[person.screen_name] = classifier(api.followers(person).__len__())
+
+print(result)
 

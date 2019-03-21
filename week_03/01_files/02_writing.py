@@ -3,8 +3,8 @@ Write a script that reads in the contents of words.txt and writes the contents i
 to a new file words_reverse.txt.
 '''
 
-f1 = "ProjectDocuments/The Marvellous Land of Oz.txt"
-f2 = "ProjectDocuments/zO fo dnaL suollevraM ehT .txt"
+f1 = "Documents/The Marvellous Land of Oz.txt"
+f2 = "Documents/zO fo dnaL suollevraM ehT .txt"
 
 def rev(file1, file2):
     with open(file1, 'r') as file1:

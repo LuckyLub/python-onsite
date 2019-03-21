@@ -23,8 +23,8 @@ def sed(pattern, replacement, file1, file2):
             new_text = text_file1.replace(pattern, replacement)
             file2.write(new_text)
 
-f1 = "ProjectDocuments/The Marvellous Land of Oz.txt"
-f2 = "ProjectDocuments/CoppiedAdjustOzToMordor.txt"
+f1 = "Documents/The Marvellous Land of Oz.txt"
+f2 = "Documents/CoppiedAdjustOzToMordor.txt"
 p = "Oz"
 r = "Mordor"
 

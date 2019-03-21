@@ -25,7 +25,7 @@ import os
 
 
 #setting up the directory and subdirectories, and collecting all files.
-directory = "ProjectDocuments/MP3"
+directory = "Documents/MP3"
 dirs = [x[0] for x in os.walk(directory)]
 files = [x[2] for x in os.walk(directory)]
 

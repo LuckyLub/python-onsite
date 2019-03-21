@@ -6,7 +6,7 @@ Source: http://greenteapress.com/thinkpython2/html/thinkpython2010.html
 
 '''
 
-with open("ProjectDocuments/The Marvellous Land of Oz.txt") as file:
+with open("Documents/The Marvellous Land of Oz.txt") as file:
     text = file.read().split()
 
 word_count ={}
