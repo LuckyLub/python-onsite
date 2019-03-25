@@ -40,38 +40,38 @@ connection = engine.connect()
 metadata = sqa.MetaData()
 
 posts = sqa.Table('posts', metadata,
-                  sqa.Column('id', sqa.Integer, autoincrement=True),
+                  sqa.Column('id', sqa.Integer, primary_key=True, autoincrement=True),
                   sqa.Column('link', sqa.VARCHAR()),
                   sqa.Column('description', sqa.VARCHAR()),
                   sqa.Column('date_added', sqa.VARCHAR()),
                   sqa.Column('read', sqa.BOOLEAN(), default=False, nullable=False),
                   sqa.Column('rating', sqa.SmallInteger, default= 0, nullable=False),
                   sqa.Column('starred', sqa.BOOLEAN, default= False, nullable=False),
-                  sqa.Column('slack_id', sqa.VARCHAR(),unique=True, default= False, nullable=False)
+                  sqa.Column('slack_id', sqa.VARCHAR(), unique=True, default= False, nullable=False)
                   )
 
 comments = sqa.Table('comments', metadata,
-                     sqa.Column('id', sqa.Integer(), nullable=False, autoincrement=True),
+                     sqa.Column('id', sqa.Integer(), primary_key=True, autoincrement=True),
                      sqa.Column('comment', sqa.VARCHAR()),
                   )
 
 users = sqa.Table('users', metadata,
-                     sqa.Column('id', sqa.Integer(), nullable=False, autoincrement=True),
+                     sqa.Column('id', sqa.Integer(), primary_key=True, autoincrement=True),
                      sqa.Column('user_name', sqa.VARCHAR()),
                   )
 
 posts_comments = sqa.Table('posts_comments', metadata,
-                           sqa.Column('id', sqa.Integer(), nullable=False, autoincrement=True),
+                           sqa.Column('id', sqa.Integer(), primary_key=True, autoincrement=True),
                            sqa.Column('postsID', sqa.Integer(), nullable=False),
                            sqa.Column('commentsID', sqa.Integer(), nullable=False))
 
 posts_users = sqa.Table('posts_users', metadata,
-                        sqa.Column('id', sqa.Integer(), nullable=False, autoincrement=True),
+                        sqa.Column('id', sqa.Integer(), primary_key=True, autoincrement=True),
                         sqa.Column('postsID', sqa.Integer(), nullable=False),
                         sqa.Column('usersID', sqa.Integer(), nullable=False))
 
 comments_users = sqa.Table('comments_users', metadata,
-                           sqa.Column('id', sqa.Integer(), nullable=False, autoincrement=True),
+                           sqa.Column('id', sqa.Integer(), primary_key=True, autoincrement=True),
                            sqa.Column('commentsID', sqa.Integer(), nullable=False),
                            sqa.Column('usersID', sqa.Integer(), nullable=False))
 
