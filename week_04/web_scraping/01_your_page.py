@@ -13,7 +13,7 @@ import requests
 import os
 
 url = "https://lubcountcooper.github.io/my_sites/"
-file = "/home/robert-jan/Documents/CodingNomads/Extras/my_sites/index.html"
+file = "/home/robert-jan/Documents/CodingNomads/Extras/my_sites/topics_overview.html"
 
 with os.fdopen(os.open(file, os.O_RDONLY), "r") as fin:
     original = fin.read()
