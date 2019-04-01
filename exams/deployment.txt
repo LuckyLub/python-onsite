@@ -3,14 +3,46 @@ HEROKU DEPLOYMENT / SWITCHING DJANGO'S DB BACKEND
 
 1) High level steps to get our project up and running on Heroku
 
+    Make an account.
+    Download heroku (for terminal): sudo snap install --classic heroku
+    Download the django_heroku python package into project env.
+    Make Procfile
+    pip freeze > requirements.txt (heroku uses this to install the python packages).
+
+    Login
+    heroku create
+    Push your commits.
+    Resolve errors and push again until succes.
+
+        heroku run python manage.py migrate (create a database on heroku, it uses the models.py file)
+    heroku run python3 manage.py loaddata datadump.json (load the data to the created database)
+
+
 2) What do we need to prepend to a python command in order to
 run code remotely on a Heroku server?
 
+    - heroku run
+
+
 3) What does a database connection string consist of?
+
+    - Port
+    - name db
+    - username
+    - password
+    - engine + driver
+    - host
 
 4) Where do the parts of Q3 go in Django?
 
+    - In the settings.py file / DATABASES
+
 5) High level steps to migrate a DB from SQLite to Postgres
+
+    1. create a database on postgres,
+    2. dump your sqlite to json file.
+    3. push datadump
+    4. load your dump into your postgres database.
 
 
 YOUR QUESTIONS
@@ -18,13 +50,27 @@ YOUR QUESTIONS
 
 3) BLAKE: Working with different branches and pushing to Heroku, how can we guarantee uptime?
 
+    - Set up your heroku app first time.
+    - Keep develloping locally, without pushing to heroku.
+    - When local is ready for update, push.
+        - When working with multiple branches, only the master should be pushed to heroku. Branches should be merged
+        with the master when ready.
+    - When running into errors, nothing online will change, until all errors are resolved.
 
 5) MING: After changing data ownership permissions, what steps you need to follow to make
 	that reflected in your app?
 
+
 7) ROBERT:
 	* How to use static files (CSS, JS) with Django on a server?
+
+	- add static dirs to settings
+
 	* How to push your database information up to a remote DB on Heroku?
+
+	-  heroku run python3 manage.py loaddata datadump.json
 
 
 10: ARNO: How do you handle your SECRET_KEY with Heroku?
+
+    - Settings of your app online.
